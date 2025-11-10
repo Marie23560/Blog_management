@@ -37,10 +37,6 @@ public class User {
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
-
-    /**
-     * Timestamp indicating the last time the user record was updated.
-     */
     @UpdateTimestamp
     @Column(nullable = false)
     private LocalDateTime updatedAt;

@@ -21,11 +21,28 @@ spring:
       database: blogdb
 
 
+
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
 
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+security:
+  bearerAuth: []
+  user:
+    name: Marie
+    password: Marie@78
+
+
+
 server:
   port: 8080
+
