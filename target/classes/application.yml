@@ -1,5 +1,5 @@
 spring:
-  # Primary datasource configuration for PostgreSQL
+
   datasource:
     url: jdbc:postgresql://localhost:5432/blogdb
     username: postgres
@@ -13,6 +13,13 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+
+  security:
+    bearerAuth: [ ]
+    user:
+      name: Marie
+      password: Marie@78
+
 
 
   data:
@@ -35,11 +42,7 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
-security:
-  bearerAuth: []
-  user:
-    name: Marie
-    password: Marie@78
+
 
 
 
